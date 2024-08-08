@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import SocialPill from '../components/SocialPill.astro';
+import LinkedinIcon from '../components/icons/Linkedin.astro';
+import GitHubIcon from '../components/icons/GitHub.astro';
+import MailIcon from '../components/icons/Mail.astro';
+import Experience from '../components/Experience.astro';
+import Skills from '../components/Skills.astro';
+
+---
+
+<Layout title="Portafolio de Brandon Gonzalez - Programador y Desarrollador Web con 5 años de experiencia en el mercado">
+	<main class="px-4 pb-24">
+		<SectionContainer id="principal" class="py-44 pb-14">
+			<img class="rounded-full size-12 mb-4" src="https://media.licdn.com/dms/image/C4E03AQFDnxAG_TwW8g/profile-displayphoto-shrink_800_800/0/1636078258435?e=1723680000&v=beta&t=HbcGuFbuVDMnyfyYSmpQ1avW1akMhUJZiyVwKu0vDyI" alt="picture" />
+			<h1 class="text-white text-2xl font-bold flex flex-row gap-x-4 pb-4">Hola soy Brandon Gonz&aacute;lez<div class="flex justify-center items-center">
+					<Badge>Disponibilidad inmediata</Badge>
+				</div> 
+			</h1>
+			<h2 class="text-xl text-white lg:text-3xl text-wrap max-w-[700px] opacity-50"><span>5 años de experiencia laboral.</span><span class="text-yellow-200/90"> Estudiante de Ingiener&iacute;a del Software.</span>  De Costa Rica. Especializado en SDLC de software.</h2>
+				<nav class="flex gap-x-2 text-white/30 mt-7 flex-wrap">
+						<SocialPill href="https://www.linkedin.com/in/brandon-gonz%C3%A1lez-%C3%A1lvarez-96905b159/">
+							<LinkedinIcon class="size-4"/>
+							LinkedIn
+						</SocialPill>
+						<SocialPill href="https://www.linkedin.com/in/brandon-gonz%C3%A1lez-%C3%A1lvarez-96905b159/">
+							<GitHubIcon class="size-4"/>
+							GitHub
+						</SocialPill>
+						<SocialPill href="mailto:bgonzaleza2896@gmail.com">
+							<MailIcon class="size-4"/>
+							bgonzaleza2896@gmail.com
+						</SocialPill>
+				</nav>
+		</SectionContainer>
+		<SectionContainer id="experience" class="py-44 pb-14">
+			<h1 class="text-white text-4xl font-semibold mb-6">Experiencia laboral</h1>
+			<Experience/>
+		</SectionContainer>
+		<SectionContainer id="skills" class="py-44 pb-14">
+			<h1 class="text-white text-4xl font-semibold mb-6">Mis habilidades</h1>
+			<Skills/>
+		</SectionContainer>
+	</main>
+</Layout>
+

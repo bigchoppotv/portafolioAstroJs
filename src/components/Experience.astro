@@ -1,0 +1,28 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+    const EXPERIENCE = [
+        {
+            date: 'Junio del 2018 hasta marzo del 2021',
+            title: 'Desarrollador Fullstack',
+            description: 'Encargado de desarrollar backend y frontend de sitios web, dar soporte a las aplicaciones de planificación de los recursos institucionales y a los sitios web. Analista de vulnerabilidades y de errores para aplicaciones móviles y sitios web. Documentar todo sobre los proyectos asignados.',
+            link: '#'
+        },
+        {
+            date: 'Noviembre del 2021 hasta enero del 2023',
+            title: 'Desarrollador Backend',
+            description: 'Responsable de analizar e implementar nuevas funcionalidades y correcciones de errores. Crear, modificar y mantenimiento de bases de datos. Encontrar soluciones o herramientas que contribuyan efectivamente al desarrollo de aplicaciones.QA de nuevas implementaciones o arreglo de errores. Encargado de conectar servicios web externos y crear los dentro de la aplicación. Organizar y estructurar la información en archivos para que el frontend utiliza los datos adecuadamente',
+            link: '#'
+        }
+    ]
+---
+<ol class="relative border-s border-gray-200 dark:border-gray-700">            
+    {
+        EXPERIENCE.map(Experience=> (
+            <li class="mb-10 ms-4">
+                <ExperienceItem {... Experience}/>
+            </li>
+        ))
+    }      
+</ol>
+
