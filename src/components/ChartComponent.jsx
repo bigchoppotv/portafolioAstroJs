@@ -69,7 +69,6 @@ const ChartComponent = () => {
       },
       options: {
         responsive: true,
-        maintainAspectRatio: true,
         borderColor: 'black',
         borderWidth: 4,
         hoverBorderColor: 'white',
@@ -105,9 +104,10 @@ const ChartComponent = () => {
 
   Chart.defaults.borderColor = '#FFFFFF';
   Chart.defaults.color = '#000';
+  
 
   return (
-    <div className="chart-container">
+    <div className="chart-container" style={{position: 'relative', height: '70vh', width:'40vw' }}>
       <canvas ref={chartRef}></canvas>
     </div>
   );
